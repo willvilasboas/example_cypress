@@ -3,7 +3,7 @@ export const valueSchema = {
     required: ['uid','uf','state','cases','deaths','suspects','refuses','datetime'],
     properties: {
         uid: {
-            type: 'string'
+            type: 'integer'
         },
         uf: {
             type: 'string'
