@@ -21,7 +21,7 @@ export const valueSchema = {
             type: 'integer'
         },
         refuses: {
-            type: 'string'
+            type: 'integer'
         },
         datetime: {
             type: 'string'
