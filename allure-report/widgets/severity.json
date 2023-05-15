@@ -1,1 +1,1 @@
-[{"uid":"520ff1eff3ceea59","name":"Cenario: Validar o contrato do serviço - Lista status atual por estado brasileiros ","time":{"start":1684131580910,"stop":1684131582073,"duration":1163},"status":"passed","severity":"normal"}]
+[{"uid":"626162ba18bff7ce","name":"Cenario: Validar o contrato do serviço - Lista status atual por estado brasileiros ","time":{"start":1684168052234,"stop":1684168053719,"duration":1485},"status":"failed","severity":"normal"}]

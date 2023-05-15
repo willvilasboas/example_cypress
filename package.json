@@ -4,8 +4,13 @@
   "description": "projeto release notes florida",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run --headed --browser chrome --reporter junit --reporter-options \"mochaFile=test-results/results.xml\"",
-    "allure-report": "allure generate allure-results --clean && allure open"
+    "allure:report": "allure generate allure-results --clean -o allure-report",
+    "allure:clear_results": "(if exist allure-results (rmdir /S /Q allure-results && mkdir allure-results))",
+    "allure:clear_report": "(if exist allure-report (rmdir  /S /Q allure-report))",
+    "precy-run": "yarn run allure:clear_results && yarn run allure:clear_report",
+    "cy-run": "cypress run --env allure=true",
+    "postcy-run": "yarn run allure:report"
+
   },
   "author": "Willian Vilas",
   "license": "ISC",
