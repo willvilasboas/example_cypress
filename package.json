@@ -8,7 +8,7 @@
     "allure:clear_results": "(if exist allure-results (rmdir /S /Q allure-results && mkdir allure-results))",
     "allure:clear_report": "(if exist allure-report (rmdir  /S /Q allure-report))",
     "precy-run": "yarn run allure:clear_results && yarn run allure:clear_report",
-    "cy-run": "cypress run --env allure=true",
+    "cy-run": "cypress run --config video=false --config screenshotOnRunFailure=false --env allure=true",
     "postcy-run": "yarn run allure:report"
 
   },

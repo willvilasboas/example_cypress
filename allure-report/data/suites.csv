@@ -1,2 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"failed","Mon May 15 13:27:32 BRT 2023","Mon May 15 13:27:33 BRT 2023","1485","","Consumo da api Covid19 Brazil API","","","","Cenario: Validar o contrato do serviço - Lista status atual por estado brasileiros ",""
+"failed","Mon May 15 14:05:46 BRT 2023","Mon May 15 14:05:47 BRT 2023","1151","","Consumo da api Covid19 Brazil API","","","","Cenario: Validar o contrato do serviço - Lista status atual por estado brasileiros ",""
