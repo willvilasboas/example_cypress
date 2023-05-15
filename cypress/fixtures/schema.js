@@ -1,9 +1,9 @@
 export const valueSchema = {
     type: 'object',
-    required: ['uf','state','cases','deaths','suspects','refuses','datetime'],
+    required: ['uid','uf','state','cases','deaths','suspects','refuses','datetime'],
     properties: {
         uid: {
-            type: 'integer'
+            type: 'string'
         },
         uf: {
             type: 'string'
@@ -21,10 +21,10 @@ export const valueSchema = {
             type: 'integer'
         },
         refuses: {
-            type: 'integer'
+            type: 'string'
         },
         datetime: {
-            type: 'integer'
+            type: 'string'
         }
     }
 };
