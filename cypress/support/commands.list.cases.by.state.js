@@ -1,6 +1,7 @@
 
 import urls from './urls'
 import * as dataSchema from '../fixtures/schema.js'
+import * as dataSchema2 from '../fixtures/schema2.js'
 
 require('cypress-plugin-api');
 const {expect} = require("chai").use(require('chai-json-schema'));
@@ -18,8 +19,27 @@ Cypress.Commands.add('valid_status_query', () => {
         })
 })
 
+Cypress.Commands.add('valid_status_query2', () => {
+    cy.api({
+        method: 'GET',
+        url: urls.url_base + '/api/report/v1/brazil/uf/sp',
+        failOnStatusCode: false      
+    }).then((response) => {
+            cy.validate_response2(response).then(() =>{
+                return response.body
+            })
+       
+        })
+})
+
 Cypress.Commands.add('validate_response', (resp) => {
    expect(resp.status).to.eq(200)
-   console.log(expect(resp.body).to.be.jsonSchema(dataSchema.valueSchema))
-   expect(Object.keys(dataSchema.valueSchema.required).length).to.eq(Object.keys(resp.body).length)
-})    
+   console.log(expect(resp.body).to.be.jsonSchema(dataSchema2.valueSchema2))
+   expect(Object.keys(dataSchema2.valueSchema2.required).length).to.eq(Object.keys(resp.body).length)
+})
+
+Cypress.Commands.add('validate_response2', (resp) => {
+    expect(resp.status).to.eq(200)
+    console.log(expect(resp.body).to.be.jsonSchema(dataSchema.valueSchema))
+    expect(Object.keys(dataSchema.valueSchema.required).length).to.eq(Object.keys(resp.body).length)
+ })
