@@ -10,12 +10,12 @@ module.exports = defineConfig({
     
   "reporter": "mochawesome",
   "reporterOptions": {
-      "reportDir": "cypress/reports/mochawesome-report",
+      "reportDir": "cypress/reports/report",
       "overwrite": false,
       "charts": true,
       "html": true,
       "json": false,
-      "timestamp": "mmddyyyy_HHMMss"
+      //"timestamp": "mmddyyyy_HHMMss"
     }
   },
 });
