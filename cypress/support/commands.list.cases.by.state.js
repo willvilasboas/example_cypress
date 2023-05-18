@@ -34,7 +34,12 @@ Cypress.Commands.add('valid_status_query2', () => {
 
 Cypress.Commands.add('validate_response', (resp) => {
    expect(resp.status).to.eq(200)
+
+   debugger
    console.log(expect(resp.body).to.be.jsonSchema(dataSchema2.valueSchema2))
+
+     debugger
+
    expect(Object.keys(dataSchema2.valueSchema2.required).length).to.eq(Object.keys(resp.body).length)
 })
 

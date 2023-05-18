@@ -4,18 +4,17 @@ const allureWriter = require('@shelex/cypress-allure-plugin/writer');
 module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
-      //allureWriter(on, config);
-       // return config;
+      
     },
     
   "reporter": "mochawesome",
   "reporterOptions": {
       "reportDir": "cypress/reports",
-      "overwrite": false,
+      "overwrite": true,
       "charts": true,
       "html": true,
       "json": false,
-      //"timestamp": "mmddyyyy_HHMMss"
+      "timestamp": "mmddyyyy_HHMMss"
     }
   },
 });
