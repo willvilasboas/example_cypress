@@ -9,7 +9,7 @@ describe('Consumo da api Covid19 Brazil API', () => {
      })
 })
 
-describe('Usuarios devem realizar o login', () => {
+describe('Usuarios devem realizar o login no site', () => {
 
    let data;
  
