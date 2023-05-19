@@ -14,7 +14,7 @@ module.exports = defineConfig({
       "charts": true,
       "html": true,
       "json": false,
-      "timestamp": "mmddyyyy_HHMMss"
+      //"timestamp": "mmddyyyy_HHMMss"
     }
   },
 });
