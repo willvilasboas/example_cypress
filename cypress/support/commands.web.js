@@ -10,7 +10,10 @@ Cypress.Commands.add('login', (username, password) => {
     cy.get(login.username).type(username)
     cy.get(login.password).type(password)
     cy.get(login.loginButton).click()
-    cy.contains('h1', 'Dashboard')
+    //cy.contains('h1', 'Dashboard')
+    cy.xpath('//h1').should('have.text', 'Dashboard')
+    cy.xpath('//a//img[@src="assets/img/profile-img.jpg"]/following-sibling::span').should('have.text', 'K. Anderson')
+
 })
 
 Cypress.Commands.add('new_user', (name, username, password, roles) => {

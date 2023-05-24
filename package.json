@@ -4,13 +4,12 @@
   "description": "projeto release notes florida",
   "main": "index.js",
   "scripts": {
-    "clean:reports": "rmdir /S /Q cypress\\reports && mkdir cypress\\reports && mkdir cypress\\reports\\mochareports",
-    "pretest": "npm run clean:reports",
-    "scripts": "cypress run",
-    "combine-reports": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",
-    "generate-report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
-    "posttest": "npm run combine-reports && npm run generate-report",
-    "teste": "npm run scripts || npm run posttest"
+    "clean:reports": "rmdir /S /Q cypress\\reports",
+    "test": "cypress run",
+    "merge":"mochawesome-merge cypress/reports/*.json -o cypress/reports/output.json",
+    "generate_mochawesome_report": "marge cypress/reports/output.json --reportDir ./ --inline",
+    "teste": "npm run clean:reports && npm run test && npm run merge && npm run generate_mochawesome_report"
+    
   },
   "author": "Willian Vilas",
   "license": "ISC",

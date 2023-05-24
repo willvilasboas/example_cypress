@@ -14,11 +14,5 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands.list.cases.by.state'
-import '@shelex/cypress-allure-plugin'
 import './commands.web'
-
-
-
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
+import './commands.api'
