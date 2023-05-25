@@ -1,8 +1,8 @@
 
-describe('Consumo da api Covid19 Brazil API', () => {
+describe('Consulta na api Covid19 Brazil API', () => {
    
-   it('GET - Realizar uma consulta com sucesso e retornar uma lista ', () => {
-        cy.valid_status_query()       
+   it('GET - Obter lista de casos por estado', () => {
+        cy.valid_list_state()       
      })
      /*
      it('Cenario: Validar o contrato do serviço - Lista status atual por estado brasileiros ', () => {
