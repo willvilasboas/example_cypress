@@ -24,7 +24,7 @@ export const valueSchema2 = {
             type: 'integer'
         },
         datetime: {
-            type: 'integer'
+            type: 'string'
         }
     }
 };

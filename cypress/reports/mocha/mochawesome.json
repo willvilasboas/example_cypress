@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2023-05-25T15:20:50.623Z",
-    "end": "2023-05-25T15:20:52.576Z",
-    "duration": 1953,
+    "start": "2023-05-25T15:49:15.883Z",
+    "end": "2023-05-25T15:49:18.142Z",
+    "duration": 2259,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e686235f-992a-45df-9608-37d9c0ebf952",
+      "uuid": "0bc1fef3-61c7-41c1-9fb2-778d70ef2751",
       "title": "",
       "fullFile": "cypress\\e2e\\api.consulta.spec.cy.js",
       "file": "cypress\\e2e\\api.consulta.spec.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ce9d7fe6-9f7b-4119-8960-ecb0271ae8f3",
+          "uuid": "6fa7092e-a437-4a11-952c-920de4baec8e",
           "title": "Consumo da api Covid19 Brazil API",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "GET - Realizar uma consulta com sucesso e retornar uma lista ",
               "fullTitle": "Consumo da api Covid19 Brazil API GET - Realizar uma consulta com sucesso e retornar uma lista ",
               "timedOut": null,
-              "duration": 1822,
+              "duration": 2144,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "AssertionError: expected value to match json-schema '{\"type\":\"object\",\"required\":[\"...' -> '{\"uid\":35,\"uf\":\"SP\",\"state\":\"S...'\n      Invalid type: string (expected integer)\n          schema: {\"type\":\"object\",\"required\":[\"uid\",\"uf\",\"state\",\"cases\",\"dea...\n          rule:   /properties/datetime/type -> \"integer\"\n          field:  /datetime -> string: \"2023-05-23T20:33:42.538Z\"\n    at Context.eval (webpack:///./cypress/support/commands.api.js:38:10)",
                 "diff": "- { uid: 35,\n-   uf: 'SP',\n-   state: 'São Paulo',\n-   cases: 6609385,\n-   deaths: 180199,\n-   suspects: 5334,\n-   refuses: 596,\n-   datetime: '2023-05-23T20:33:42.538Z' }\n+ '{\"type\":\"object\",\"required\":[\"...'\n"
               },
-              "uuid": "b735136f-7dcb-4a69-9da7-ced28787e675",
-              "parentUUID": "ce9d7fe6-9f7b-4119-8960-ecb0271ae8f3",
+              "uuid": "f17643e4-c4c7-421b-a1de-a44155a9c0ef",
+              "parentUUID": "6fa7092e-a437-4a11-952c-920de4baec8e",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "b735136f-7dcb-4a69-9da7-ced28787e675"
+            "f17643e4-c4c7-421b-a1de-a44155a9c0ef"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 1822,
+          "duration": 2144,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
