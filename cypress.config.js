@@ -7,15 +7,16 @@ module.exports = defineConfig({
       
     },
     
-  "reporter": "mochawesome",
-  "reporterOptions": {
-      "reportDir": "cypress/reports",
-      "reportFilename": "report",
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+    "reporterEnabled": "mochawesome",
+    "mochawesomeReporterOptions": {
+      "reportDir": "cypress/reports/mocha",
+      "quite": true,
       "overwrite": false,
-      "html": true,
-      "json": true,
-      "charts": true,
-      //"timestamp": "mmddyyyy_HHMMss"
+      "html": false,
+      "json": true
     }
+   }  
   },
 });

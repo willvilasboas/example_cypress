@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-05-24T20:25:02.429Z",
-    "end": "2023-05-24T20:25:03.296Z",
-    "duration": 867,
+    "start": "2023-05-25T14:52:31.975Z",
+    "end": "2023-05-25T14:52:46.874Z",
+    "duration": 14899,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,49 +18,49 @@
   },
   "results": [
     {
-      "uuid": "f74206d1-4bb3-4ec7-b3d4-6057944a6c31",
+      "uuid": "fe5a2b78-c1c6-43dd-b12f-85e26e40e84e",
       "title": "",
-      "fullFile": "cypress\\e2e\\api.consulta.spec.cy.js",
-      "file": "cypress\\e2e\\api.consulta.spec.cy.js",
+      "fullFile": "cypress\\e2e\\login.spec.cy.js",
+      "file": "cypress\\e2e\\login.spec.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "fdff424f-ce6f-4363-930c-3e714f37b826",
-          "title": "Consumo da api Covid19 Brazil API",
+          "uuid": "79365481-5240-4132-acf4-4dd77783d8f7",
+          "title": "Validar login com sucesso no site",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "GET - Realizar uma consulta com sucesso e retornar uma lista ",
-              "fullTitle": "Consumo da api Covid19 Brazil API GET - Realizar uma consulta com sucesso e retornar uma lista ",
+              "title": "atraves da pagina da aplicacao com sucesso",
+              "fullTitle": "Validar login com sucesso no site atraves da pagina da aplicacao com sucesso",
               "timedOut": null,
-              "duration": 784,
+              "duration": 11427,
               "state": "passed",
-              "speed": "fast",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.valid_status_query();",
+              "code": "cy.login(data.username, data.password);",
               "err": {},
-              "uuid": "0de4fb0b-a87b-4978-9f07-3ee58cf79374",
-              "parentUUID": "fdff424f-ce6f-4363-930c-3e714f37b826",
+              "uuid": "e4f2a8fb-259d-4dce-86dc-ba3ec1713606",
+              "parentUUID": "79365481-5240-4132-acf4-4dd77783d8f7",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0de4fb0b-a87b-4978-9f07-3ee58cf79374"
+            "e4f2a8fb-259d-4dce-86dc-ba3ec1713606"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 784,
+          "duration": 11427,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -83,8 +83,8 @@
     "mochawesome": {
       "options": {
         "quiet": false,
-        "reportFilename": "report",
-        "saveHtml": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
         "saveJson": true,
         "consoleReporter": "spec",
         "useInlineDiffs": false,
@@ -94,12 +94,12 @@
     },
     "marge": {
       "options": {
-        "reportDir": "cypress/reports",
-        "reportFilename": "report",
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
         "overwrite": false,
-        "html": true,
-        "json": true,
-        "charts": true
+        "html": false,
+        "json": true
       },
       "version": "6.2.0"
     }

@@ -2,23 +2,23 @@
   "stats": {
     "suites": 2,
     "tests": 2,
-    "passes": 2,
+    "passes": 1,
     "pending": 0,
-    "failures": 0,
+    "failures": 1,
     "testsRegistered": 2,
-    "passPercent": 100,
+    "passPercent": 50,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "start": "2023-05-24T20:25:02.429Z",
-    "end": "2023-05-24T20:25:31.785Z",
-    "duration": 29356
+    "start": "2023-05-25T14:52:23.478Z",
+    "end": "2023-05-25T14:52:46.874Z",
+    "duration": 23396
   },
   "results": [
     {
-      "uuid": "d21a4871-32de-4067-aa8c-e6eadc507500",
+      "uuid": "fe5a2b78-c1c6-43dd-b12f-85e26e40e84e",
       "title": "",
       "fullFile": "cypress\\e2e\\login.spec.cy.js",
       "file": "cypress\\e2e\\login.spec.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "91e8b7bd-e28f-46ad-806c-091197908838",
+          "uuid": "79365481-5240-4132-acf4-4dd77783d8f7",
           "title": "Validar login com sucesso no site",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "atraves da pagina da aplicacao com sucesso",
               "fullTitle": "Validar login com sucesso no site atraves da pagina da aplicacao com sucesso",
               "timedOut": null,
-              "duration": 11889,
+              "duration": 11427,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.login(data.username, data.password);",
               "err": {},
-              "uuid": "f8e1697e-bc66-4c98-8f14-9088b3eda203",
-              "parentUUID": "91e8b7bd-e28f-46ad-806c-091197908838",
+              "uuid": "e4f2a8fb-259d-4dce-86dc-ba3ec1713606",
+              "parentUUID": "79365481-5240-4132-acf4-4dd77783d8f7",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f8e1697e-bc66-4c98-8f14-9088b3eda203"
+            "e4f2a8fb-259d-4dce-86dc-ba3ec1713606"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 11889,
+          "duration": 11427,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -76,7 +76,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "f74206d1-4bb3-4ec7-b3d4-6057944a6c31",
+      "uuid": "b7caeb04-7839-4820-bd01-b677bdf84b4e",
       "title": "",
       "fullFile": "cypress\\e2e\\api.consulta.spec.cy.js",
       "file": "cypress\\e2e\\api.consulta.spec.cy.js",
@@ -85,7 +85,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "fdff424f-ce6f-4363-930c-3e714f37b826",
+          "uuid": "80a3982f-64d2-45a2-a037-3d02b4a23c74",
           "title": "Consumo da api Covid19 Brazil API",
           "fullFile": "",
           "file": "",
@@ -96,29 +96,33 @@
               "title": "GET - Realizar uma consulta com sucesso e retornar uma lista ",
               "fullTitle": "Consumo da api Covid19 Brazil API GET - Realizar uma consulta com sucesso e retornar uma lista ",
               "timedOut": null,
-              "duration": 784,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
+              "duration": 1150,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "cy.valid_status_query();",
-              "err": {},
-              "uuid": "0de4fb0b-a87b-4978-9f07-3ee58cf79374",
-              "parentUUID": "fdff424f-ce6f-4363-930c-3e714f37b826",
+              "err": {
+                "message": "AssertionError: expected value to match json-schema '{\"type\":\"object\",\"required\":[\"...' -> '{\"uid\":35,\"uf\":\"SP\",\"state\":\"S...'\n      Invalid type: string (expected integer)\n          schema: {\"type\":\"object\",\"required\":[\"uid\",\"uf\",\"state\",\"cases\",\"dea...\n          rule:   /properties/datetime/type -> \"integer\"\n          field:  /datetime -> string: \"2023-05-23T20:33:42.538Z\"",
+                "estack": "AssertionError: expected value to match json-schema '{\"type\":\"object\",\"required\":[\"...' -> '{\"uid\":35,\"uf\":\"SP\",\"state\":\"S...'\n      Invalid type: string (expected integer)\n          schema: {\"type\":\"object\",\"required\":[\"uid\",\"uf\",\"state\",\"cases\",\"dea...\n          rule:   /properties/datetime/type -> \"integer\"\n          field:  /datetime -> string: \"2023-05-23T20:33:42.538Z\"\n    at Context.eval (webpack:///./cypress/support/commands.api.js:38:10)",
+                "diff": "- { uid: 35,\n-   uf: 'SP',\n-   state: 'São Paulo',\n-   cases: 6609385,\n-   deaths: 180199,\n-   suspects: 5334,\n-   refuses: 596,\n-   datetime: '2023-05-23T20:33:42.538Z' }\n+ '{\"type\":\"object\",\"required\":[\"...'\n"
+              },
+              "uuid": "b05b2828-8302-4f2f-a84d-f08a703d2682",
+              "parentUUID": "80a3982f-64d2-45a2-a037-3d02b4a23c74",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "0de4fb0b-a87b-4978-9f07-3ee58cf79374"
+          "passes": [],
+          "failures": [
+            "b05b2828-8302-4f2f-a84d-f08a703d2682"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 784,
+          "duration": 1150,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -141,8 +145,8 @@
     "mochawesome": {
       "options": {
         "quiet": false,
-        "reportFilename": "report",
-        "saveHtml": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
         "saveJson": true,
         "consoleReporter": "spec",
         "useInlineDiffs": false,
@@ -152,12 +156,12 @@
     },
     "marge": {
       "options": {
-        "reportDir": "cypress/reports",
-        "reportFilename": "report",
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
         "overwrite": false,
-        "html": true,
-        "json": true,
-        "charts": true
+        "html": false,
+        "json": true
       },
       "version": "6.2.0"
     }
