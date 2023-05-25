@@ -12,13 +12,13 @@
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "start": "2023-05-25T14:52:23.478Z",
-    "end": "2023-05-25T14:52:46.874Z",
-    "duration": 23396
+    "start": "2023-05-25T15:20:50.623Z",
+    "end": "2023-05-25T15:21:21.996Z",
+    "duration": 31373
   },
   "results": [
     {
-      "uuid": "fe5a2b78-c1c6-43dd-b12f-85e26e40e84e",
+      "uuid": "32f13860-8712-4d6e-bf3d-c75911a56bd6",
       "title": "",
       "fullFile": "cypress\\e2e\\login.spec.cy.js",
       "file": "cypress\\e2e\\login.spec.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "79365481-5240-4132-acf4-4dd77783d8f7",
+          "uuid": "32fde50b-602c-414d-a46c-6f66dd6fb3c0",
           "title": "Validar login com sucesso no site",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "atraves da pagina da aplicacao com sucesso",
               "fullTitle": "Validar login com sucesso no site atraves da pagina da aplicacao com sucesso",
               "timedOut": null,
-              "duration": 11427,
+              "duration": 12875,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.login(data.username, data.password);",
               "err": {},
-              "uuid": "e4f2a8fb-259d-4dce-86dc-ba3ec1713606",
-              "parentUUID": "79365481-5240-4132-acf4-4dd77783d8f7",
+              "uuid": "55e5e3fe-2f23-4cea-98f7-c92cc09095ec",
+              "parentUUID": "32fde50b-602c-414d-a46c-6f66dd6fb3c0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e4f2a8fb-259d-4dce-86dc-ba3ec1713606"
+            "55e5e3fe-2f23-4cea-98f7-c92cc09095ec"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 11427,
+          "duration": 12875,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -76,7 +76,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "b7caeb04-7839-4820-bd01-b677bdf84b4e",
+      "uuid": "e686235f-992a-45df-9608-37d9c0ebf952",
       "title": "",
       "fullFile": "cypress\\e2e\\api.consulta.spec.cy.js",
       "file": "cypress\\e2e\\api.consulta.spec.cy.js",
@@ -85,7 +85,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "80a3982f-64d2-45a2-a037-3d02b4a23c74",
+          "uuid": "ce9d7fe6-9f7b-4119-8960-ecb0271ae8f3",
           "title": "Consumo da api Covid19 Brazil API",
           "fullFile": "",
           "file": "",
@@ -96,7 +96,7 @@
               "title": "GET - Realizar uma consulta com sucesso e retornar uma lista ",
               "fullTitle": "Consumo da api Covid19 Brazil API GET - Realizar uma consulta com sucesso e retornar uma lista ",
               "timedOut": null,
-              "duration": 1150,
+              "duration": 1822,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -109,8 +109,8 @@
                 "estack": "AssertionError: expected value to match json-schema '{\"type\":\"object\",\"required\":[\"...' -> '{\"uid\":35,\"uf\":\"SP\",\"state\":\"S...'\n      Invalid type: string (expected integer)\n          schema: {\"type\":\"object\",\"required\":[\"uid\",\"uf\",\"state\",\"cases\",\"dea...\n          rule:   /properties/datetime/type -> \"integer\"\n          field:  /datetime -> string: \"2023-05-23T20:33:42.538Z\"\n    at Context.eval (webpack:///./cypress/support/commands.api.js:38:10)",
                 "diff": "- { uid: 35,\n-   uf: 'SP',\n-   state: 'São Paulo',\n-   cases: 6609385,\n-   deaths: 180199,\n-   suspects: 5334,\n-   refuses: 596,\n-   datetime: '2023-05-23T20:33:42.538Z' }\n+ '{\"type\":\"object\",\"required\":[\"...'\n"
               },
-              "uuid": "b05b2828-8302-4f2f-a84d-f08a703d2682",
-              "parentUUID": "80a3982f-64d2-45a2-a037-3d02b4a23c74",
+              "uuid": "b735136f-7dcb-4a69-9da7-ced28787e675",
+              "parentUUID": "ce9d7fe6-9f7b-4119-8960-ecb0271ae8f3",
               "isHook": false,
               "skipped": false
             }
@@ -118,11 +118,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "b05b2828-8302-4f2f-a84d-f08a703d2682"
+            "b735136f-7dcb-4a69-9da7-ced28787e675"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 1150,
+          "duration": 1822,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

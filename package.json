@@ -8,9 +8,7 @@
     "test": "cypress run",
     "posttest": "npm run combine && npm run generate",
     "combine": "mochawesome-merge cypress/reports/mocha/*.json >cypress/reports/mochareports/report.json",
-    "generate": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
-    "teste": "npm run clean && npm run test && npm run posttest"
-    
+    "generate": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports"
   },
   "author": "Willian Vilas",
   "license": "ISC",
