@@ -1,5 +1,5 @@
 
-describe('Validar login com sucesso no site', () => {
+describe('Validar login com sucesso do site Test Automation', () => {
 
    let data;
  
@@ -13,7 +13,7 @@ describe('Validar login com sucesso no site', () => {
  
    });
  
-   it('atraves da pagina da aplicacao com sucesso', () => {
+   it('Realiza o login com sucesso', () => {
      cy.login(data.username, data.password)
      
    })

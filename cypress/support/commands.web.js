@@ -3,7 +3,7 @@ import urls from './urls'
 import login from "../selectors/login.sel.cy.js"
 
 
-require('cypress-xpath')
+//require('cypress-xpath')
 
 Cypress.Commands.add('login', (username, password) => {
     cy.visit(urls.login)
