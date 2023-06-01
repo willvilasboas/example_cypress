@@ -17,3 +17,4 @@
 import './commands.web'
 import './commands.api'
 require('cypress-xpath')
+require('cypress-plugin-api');
