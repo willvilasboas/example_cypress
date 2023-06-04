@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 0,
+    "passes": 1,
     "pending": 0,
-    "failures": 1,
-    "start": "2023-05-25T15:49:15.883Z",
-    "end": "2023-05-25T15:49:18.142Z",
-    "duration": 2259,
+    "failures": 0,
+    "start": "2023-06-03T19:29:40.751Z",
+    "end": "2023-06-03T19:29:58.431Z",
+    "duration": 17680,
     "testsRegistered": 1,
-    "passPercent": 0,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,53 +18,49 @@
   },
   "results": [
     {
-      "uuid": "0bc1fef3-61c7-41c1-9fb2-778d70ef2751",
+      "uuid": "5da627c6-bd03-457f-a6fb-42d4b0935a6e",
       "title": "",
-      "fullFile": "cypress\\e2e\\api.consulta.spec.cy.js",
-      "file": "cypress\\e2e\\api.consulta.spec.cy.js",
+      "fullFile": "cypress\\e2e\\web_login.spec.cy.js",
+      "file": "cypress\\e2e\\web_login.spec.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "6fa7092e-a437-4a11-952c-920de4baec8e",
-          "title": "Consumo da api Covid19 Brazil API",
+          "uuid": "b5bbbafe-026e-4bc3-b135-6fe7918d0856",
+          "title": "Validar login com sucesso do site Test Automation",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "GET - Realizar uma consulta com sucesso e retornar uma lista ",
-              "fullTitle": "Consumo da api Covid19 Brazil API GET - Realizar uma consulta com sucesso e retornar uma lista ",
+              "title": "Realiza o login com sucesso",
+              "fullTitle": "Validar login com sucesso do site Test Automation Realiza o login com sucesso",
               "timedOut": null,
-              "duration": 2144,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 10728,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.valid_status_query();",
-              "err": {
-                "message": "AssertionError: expected value to match json-schema '{\"type\":\"object\",\"required\":[\"...' -> '{\"uid\":35,\"uf\":\"SP\",\"state\":\"S...'\n      Invalid type: string (expected integer)\n          schema: {\"type\":\"object\",\"required\":[\"uid\",\"uf\",\"state\",\"cases\",\"dea...\n          rule:   /properties/datetime/type -> \"integer\"\n          field:  /datetime -> string: \"2023-05-23T20:33:42.538Z\"",
-                "estack": "AssertionError: expected value to match json-schema '{\"type\":\"object\",\"required\":[\"...' -> '{\"uid\":35,\"uf\":\"SP\",\"state\":\"S...'\n      Invalid type: string (expected integer)\n          schema: {\"type\":\"object\",\"required\":[\"uid\",\"uf\",\"state\",\"cases\",\"dea...\n          rule:   /properties/datetime/type -> \"integer\"\n          field:  /datetime -> string: \"2023-05-23T20:33:42.538Z\"\n    at Context.eval (webpack:///./cypress/support/commands.api.js:38:10)",
-                "diff": "- { uid: 35,\n-   uf: 'SP',\n-   state: 'São Paulo',\n-   cases: 6609385,\n-   deaths: 180199,\n-   suspects: 5334,\n-   refuses: 596,\n-   datetime: '2023-05-23T20:33:42.538Z' }\n+ '{\"type\":\"object\",\"required\":[\"...'\n"
-              },
-              "uuid": "f17643e4-c4c7-421b-a1de-a44155a9c0ef",
-              "parentUUID": "6fa7092e-a437-4a11-952c-920de4baec8e",
+              "code": "cy.login(data.username, data.password);",
+              "err": {},
+              "uuid": "c135bce5-6ec6-426c-ab7e-6e638f705a2c",
+              "parentUUID": "b5bbbafe-026e-4bc3-b135-6fe7918d0856",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "f17643e4-c4c7-421b-a1de-a44155a9c0ef"
+          "passes": [
+            "c135bce5-6ec6-426c-ab7e-6e638f705a2c"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2144,
+          "duration": 10728,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -101,7 +97,7 @@
         "id": "default",
         "reportDir": "cypress/reports/mocha",
         "quite": true,
-        "overwrite": false,
+        "overwrite": true,
         "html": false,
         "json": true
       },

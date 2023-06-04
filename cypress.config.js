@@ -4,9 +4,10 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
-      
+      require('@bahmutov/cy-grep/src/plugin')(config);
+      return config;
     },
-    
+
     "reporter": "cypress-multi-reporters",
     "reporterOptions": {
     "reporterEnabled": "mochawesome",
@@ -17,6 +18,7 @@ module.exports = defineConfig({
       "html": false,
       "json": true
     }
-   }  
+   },
+   env: { grepFilterSpecs: true, grepOmitFiltered: true },
   },
 });

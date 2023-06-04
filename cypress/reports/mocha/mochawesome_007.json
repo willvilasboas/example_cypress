@@ -1,80 +1,23 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "suites": 0,
+    "tests": 0,
+    "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2023-05-29T20:48:05.661Z",
-    "end": "2023-05-29T20:48:07.001Z",
-    "duration": 1340,
-    "testsRegistered": 1,
-    "passPercent": 100,
-    "pendingPercent": 0,
+    "start": "2023-06-03T04:30:07.360Z",
+    "end": "2023-06-03T04:30:07.365Z",
+    "duration": 5,
+    "testsRegistered": 0,
+    "passPercent": null,
+    "pendingPercent": null,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false
   },
   "results": [
-    {
-      "uuid": "f1099536-ca34-4979-bc27-d280edcc5aa0",
-      "title": "",
-      "fullFile": "cypress\\e2e\\get_state_cases.spec.cy.js",
-      "file": "cypress\\e2e\\get_state_cases.spec.cy.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "4daf6df1-1d95-4593-a80c-7a1e2a581a44",
-          "title": "Consulta na api Covid19 Brazil API",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "GET - Obter lista de casos por estado",
-              "fullTitle": "Consulta na api Covid19 Brazil API GET - Obter lista de casos por estado",
-              "timedOut": null,
-              "duration": 1236,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.valid_list_state();",
-              "err": {},
-              "uuid": "780efcc3-47fe-4ff8-b157-946bbbcce771",
-              "parentUUID": "4daf6df1-1d95-4593-a80c-7a1e2a581a44",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "780efcc3-47fe-4ff8-b157-946bbbcce771"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 1236,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    }
+    false
   ],
   "meta": {
     "mocha": {

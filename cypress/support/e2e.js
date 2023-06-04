@@ -18,3 +18,5 @@ import './commands.web'
 import './commands.api'
 require('cypress-xpath')
 require('cypress-plugin-api');
+const registerCypressGrep = require('@bahmutov/cy-grep')
+registerCypressGrep()

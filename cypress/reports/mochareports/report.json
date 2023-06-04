@@ -1,66 +1,66 @@
 {
   "stats": {
-    "suites": 2,
-    "tests": 2,
-    "passes": 1,
+    "suites": 13,
+    "tests": 13,
+    "passes": 13,
     "pending": 0,
-    "failures": 1,
-    "testsRegistered": 2,
-    "passPercent": 50,
+    "failures": 0,
+    "testsRegistered": 13,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "start": "2023-05-25T15:49:15.883Z",
-    "end": "2023-05-25T15:49:45.580Z",
-    "duration": 29697
+    "start": "2023-06-03T00:45:55.412Z",
+    "end": "2023-06-03T19:29:58.431Z",
+    "duration": 67443019
   },
   "results": [
     {
-      "uuid": "e3d46ec6-c594-4402-9fd7-f93f0d91fe29",
+      "uuid": "9b3cdc6d-10d0-49aa-a4a3-bbed98e1d2e5",
       "title": "",
-      "fullFile": "cypress\\e2e\\login.spec.cy.js",
-      "file": "cypress\\e2e\\login.spec.cy.js",
+      "fullFile": "cypress\\e2e\\post_create_user.spec.cy.js",
+      "file": "cypress\\e2e\\post_create_user.spec.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "e5775331-0a7b-41df-a988-b86d1d5f1d1a",
-          "title": "Validar login com sucesso no site",
+          "uuid": "2971b22f-680b-4ea8-ab47-ee4cdbdaff1d",
+          "title": "Criar usuário na API Reqres.in",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "atraves da pagina da aplicacao com sucesso",
-              "fullTitle": "Validar login com sucesso no site atraves da pagina da aplicacao com sucesso",
+              "title": "Deve criar um novo usuário",
+              "fullTitle": "Criar usuário na API Reqres.in Deve criar um novo usuário",
               "timedOut": null,
-              "duration": 11866,
+              "duration": 685,
               "state": "passed",
-              "speed": "slow",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.login(data.username, data.password);",
+              "code": "cy.valid_create_user();",
               "err": {},
-              "uuid": "26ac08d3-bd53-4a40-827e-5f9c2c0e08cf",
-              "parentUUID": "e5775331-0a7b-41df-a988-b86d1d5f1d1a",
+              "uuid": "c3ae36df-86d2-47ea-b2ec-9a3622f15f9b",
+              "parentUUID": "2971b22f-680b-4ea8-ab47-ee4cdbdaff1d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "26ac08d3-bd53-4a40-827e-5f9c2c0e08cf"
+            "c3ae36df-86d2-47ea-b2ec-9a3622f15f9b"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 11866,
+          "duration": 685,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -76,53 +76,687 @@
       "_timeout": 2000
     },
     {
-      "uuid": "0bc1fef3-61c7-41c1-9fb2-778d70ef2751",
+      "uuid": "41b45ec8-283c-4715-883e-35251d230b3b",
       "title": "",
-      "fullFile": "cypress\\e2e\\api.consulta.spec.cy.js",
-      "file": "cypress\\e2e\\api.consulta.spec.cy.js",
+      "fullFile": "cypress\\e2e\\web_login.spec.cy.js",
+      "file": "cypress\\e2e\\web_login.spec.cy.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "6fa7092e-a437-4a11-952c-920de4baec8e",
-          "title": "Consumo da api Covid19 Brazil API",
+          "uuid": "b464021a-5e4f-44f8-8ac0-61d55e9c3a39",
+          "title": "Validar login com sucesso do site Test Automation",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [
             {
-              "title": "GET - Realizar uma consulta com sucesso e retornar uma lista ",
-              "fullTitle": "Consumo da api Covid19 Brazil API GET - Realizar uma consulta com sucesso e retornar uma lista ",
+              "title": "Realiza o login com sucesso",
+              "fullTitle": "Validar login com sucesso do site Test Automation Realiza o login com sucesso",
               "timedOut": null,
-              "duration": 2144,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 12513,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.valid_status_query();",
-              "err": {
-                "message": "AssertionError: expected value to match json-schema '{\"type\":\"object\",\"required\":[\"...' -> '{\"uid\":35,\"uf\":\"SP\",\"state\":\"S...'\n      Invalid type: string (expected integer)\n          schema: {\"type\":\"object\",\"required\":[\"uid\",\"uf\",\"state\",\"cases\",\"dea...\n          rule:   /properties/datetime/type -> \"integer\"\n          field:  /datetime -> string: \"2023-05-23T20:33:42.538Z\"",
-                "estack": "AssertionError: expected value to match json-schema '{\"type\":\"object\",\"required\":[\"...' -> '{\"uid\":35,\"uf\":\"SP\",\"state\":\"S...'\n      Invalid type: string (expected integer)\n          schema: {\"type\":\"object\",\"required\":[\"uid\",\"uf\",\"state\",\"cases\",\"dea...\n          rule:   /properties/datetime/type -> \"integer\"\n          field:  /datetime -> string: \"2023-05-23T20:33:42.538Z\"\n    at Context.eval (webpack:///./cypress/support/commands.api.js:38:10)",
-                "diff": "- { uid: 35,\n-   uf: 'SP',\n-   state: 'São Paulo',\n-   cases: 6609385,\n-   deaths: 180199,\n-   suspects: 5334,\n-   refuses: 596,\n-   datetime: '2023-05-23T20:33:42.538Z' }\n+ '{\"type\":\"object\",\"required\":[\"...'\n"
-              },
-              "uuid": "f17643e4-c4c7-421b-a1de-a44155a9c0ef",
-              "parentUUID": "6fa7092e-a437-4a11-952c-920de4baec8e",
+              "code": "cy.login(data.username, data.password);",
+              "err": {},
+              "uuid": "80f7c2f1-d3e1-4791-8114-6a9434840ab9",
+              "parentUUID": "b464021a-5e4f-44f8-8ac0-61d55e9c3a39",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "f17643e4-c4c7-421b-a1de-a44155a9c0ef"
+          "passes": [
+            "80f7c2f1-d3e1-4791-8114-6a9434840ab9"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2144,
+          "duration": 12513,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "b7377925-ac6d-4fb3-a0c3-c611ff39f0f2",
+      "title": "",
+      "fullFile": "cypress\\e2e\\get_list_users.spec.cy.js",
+      "file": "cypress\\e2e\\get_list_users.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4da031bc-c22c-439b-ae62-ed9dbaf4d679",
+          "title": "Consulta de usuarios via API Reqres.in",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "GET - Deve retornar uma lista de usuarios",
+              "fullTitle": "Consulta de usuarios via API Reqres.in GET - Deve retornar uma lista de usuarios",
+              "timedOut": null,
+              "duration": 1158,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.consult_list_users();",
+              "err": {},
+              "uuid": "40812fff-dd62-4e02-913d-f6bdd7baeae9",
+              "parentUUID": "4da031bc-c22c-439b-ae62-ed9dbaf4d679",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "40812fff-dd62-4e02-913d-f6bdd7baeae9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1158,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "aebac10b-23b0-4dd2-abb8-5469090a924d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\post_create_user.spec.cy.js",
+      "file": "cypress\\e2e\\post_create_user.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6592c1a6-658d-4d69-9ef3-a80b142f3a76",
+          "title": "Criar usuário na API Reqres.in",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve criar um novo usuário",
+              "fullTitle": "Criar usuário na API Reqres.in Deve criar um novo usuário",
+              "timedOut": null,
+              "duration": 778,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.valid_create_user();",
+              "err": {},
+              "uuid": "6c1468e1-f675-41cc-9748-e6c0919c19f9",
+              "parentUUID": "6592c1a6-658d-4d69-9ef3-a80b142f3a76",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6c1468e1-f675-41cc-9748-e6c0919c19f9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 778,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c94da2a4-a4a8-404b-b184-70a687b882c2",
+      "title": "",
+      "fullFile": "cypress\\e2e\\web_login.spec.cy.js",
+      "file": "cypress\\e2e\\web_login.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "359dd501-ce20-4156-a626-33e618834ece",
+          "title": "Validar login com sucesso do site Test Automation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Realiza o login com sucesso",
+              "fullTitle": "Validar login com sucesso do site Test Automation Realiza o login com sucesso",
+              "timedOut": null,
+              "duration": 27999,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login(data.username, data.password);",
+              "err": {},
+              "uuid": "7f20b0db-d9de-4923-b6ff-47b540dd3571",
+              "parentUUID": "359dd501-ce20-4156-a626-33e618834ece",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7f20b0db-d9de-4923-b6ff-47b540dd3571"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 27999,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "bae9f577-8367-4306-83e1-8223c6967571",
+      "title": "",
+      "fullFile": "cypress\\e2e\\get_list_users.spec.cy.js",
+      "file": "cypress\\e2e\\get_list_users.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d47663bf-7772-438d-8b1a-ccd1483f336d",
+          "title": "Consulta de usuarios via API Reqres.in",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "GET - Deve retornar uma lista de usuarios",
+              "fullTitle": "Consulta de usuarios via API Reqres.in GET - Deve retornar uma lista de usuarios",
+              "timedOut": null,
+              "duration": 862,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.consult_list_users();",
+              "err": {},
+              "uuid": "285213ab-2096-44d0-b19c-c1821047e28f",
+              "parentUUID": "d47663bf-7772-438d-8b1a-ccd1483f336d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "285213ab-2096-44d0-b19c-c1821047e28f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 862,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "9751e940-a818-4a18-b45d-41e4cfd9d2d0",
+      "title": "",
+      "fullFile": "cypress\\e2e\\get_list_users.spec.cy.js",
+      "file": "cypress\\e2e\\get_list_users.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "edd90515-12f7-44ac-81b6-dc20a29e65b8",
+          "title": "Consulta de usuarios via API Reqres.in",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "GET - Deve retornar uma lista de usuarios",
+              "fullTitle": "Consulta de usuarios via API Reqres.in GET - Deve retornar uma lista de usuarios",
+              "timedOut": null,
+              "duration": 412,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.consult_list_users();",
+              "err": {},
+              "uuid": "c6393512-b5f3-4f51-9b34-382c7ec9b9c0",
+              "parentUUID": "edd90515-12f7-44ac-81b6-dc20a29e65b8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c6393512-b5f3-4f51-9b34-382c7ec9b9c0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 412,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "bef8d258-8965-4dc1-8663-8d0653d2f58b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\get_list_users.spec.cy.js",
+      "file": "cypress\\e2e\\get_list_users.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cd7837e5-9e67-4281-9913-755226a3494b",
+          "title": "Consulta de usuarios via API Reqres.in",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "GET - Deve retornar uma lista de usuarios",
+              "fullTitle": "Consulta de usuarios via API Reqres.in GET - Deve retornar uma lista de usuarios",
+              "timedOut": null,
+              "duration": 1006,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.consult_list_users();",
+              "err": {},
+              "uuid": "932a4ece-4d5b-42f9-9703-7c8eb98c6016",
+              "parentUUID": "cd7837e5-9e67-4281-9913-755226a3494b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "932a4ece-4d5b-42f9-9703-7c8eb98c6016"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1006,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "7b51778c-b253-41a7-a498-ecc73fdb53fc",
+      "title": "",
+      "fullFile": "cypress\\e2e\\post_create_user.spec.cy.js",
+      "file": "cypress\\e2e\\post_create_user.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7fc600b8-045a-4b31-8003-aa9b94283025",
+          "title": "Criar usuário na API Reqres.in",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve criar um novo usuário",
+              "fullTitle": "Criar usuário na API Reqres.in Deve criar um novo usuário",
+              "timedOut": null,
+              "duration": 899,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.valid_create_user();",
+              "err": {},
+              "uuid": "6e32de49-904a-4d08-9da2-b8ac6e14acd3",
+              "parentUUID": "7fc600b8-045a-4b31-8003-aa9b94283025",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6e32de49-904a-4d08-9da2-b8ac6e14acd3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 899,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "fcba7e8d-ffb3-48a7-981e-8e0152fbbcfb",
+      "title": "",
+      "fullFile": "cypress\\e2e\\get_list_users.spec.cy.js",
+      "file": "cypress\\e2e\\get_list_users.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ea10e71e-6579-4e00-91f6-08d6d453a884",
+          "title": "Consulta de usuarios via API Reqres.in",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "GET - Deve retornar uma lista de usuarios",
+              "fullTitle": "Consulta de usuarios via API Reqres.in GET - Deve retornar uma lista de usuarios",
+              "timedOut": null,
+              "duration": 371,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.consult_list_users();",
+              "err": {},
+              "uuid": "6237dc0d-5ce8-46d1-a892-c4542a9a6a7e",
+              "parentUUID": "ea10e71e-6579-4e00-91f6-08d6d453a884",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6237dc0d-5ce8-46d1-a892-c4542a9a6a7e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 371,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "569944f7-f0c5-449d-85a9-7797f8c4d0d9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\post_create_user.spec.cy.js",
+      "file": "cypress\\e2e\\post_create_user.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d57cb57e-0fcf-438e-bca6-e528b20eba5d",
+          "title": "Criar usuário na API Reqres.in",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve criar um novo usuário",
+              "fullTitle": "Criar usuário na API Reqres.in Deve criar um novo usuário",
+              "timedOut": null,
+              "duration": 639,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.valid_create_user();",
+              "err": {},
+              "uuid": "a8e1d1af-c542-4f0f-8f32-1f55795dd8d7",
+              "parentUUID": "d57cb57e-0fcf-438e-bca6-e528b20eba5d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a8e1d1af-c542-4f0f-8f32-1f55795dd8d7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 639,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "e24e4e5a-14ee-4c1d-bc2f-541613c09bce",
+      "title": "",
+      "fullFile": "cypress\\e2e\\web_login.spec.cy.js",
+      "file": "cypress\\e2e\\web_login.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2b31e70e-0e8a-42f8-89e8-7b767a7081e0",
+          "title": "Validar login com sucesso do site Test Automation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Realiza o login com sucesso",
+              "fullTitle": "Validar login com sucesso do site Test Automation Realiza o login com sucesso",
+              "timedOut": null,
+              "duration": 23915,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login(data.username, data.password);",
+              "err": {},
+              "uuid": "8d144e1d-f3cc-4af4-892d-b910a31e5cf8",
+              "parentUUID": "2b31e70e-0e8a-42f8-89e8-7b767a7081e0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8d144e1d-f3cc-4af4-892d-b910a31e5cf8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 23915,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "5da627c6-bd03-457f-a6fb-42d4b0935a6e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\web_login.spec.cy.js",
+      "file": "cypress\\e2e\\web_login.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b5bbbafe-026e-4bc3-b135-6fe7918d0856",
+          "title": "Validar login com sucesso do site Test Automation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Realiza o login com sucesso",
+              "fullTitle": "Validar login com sucesso do site Test Automation Realiza o login com sucesso",
+              "timedOut": null,
+              "duration": 10728,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login(data.username, data.password);",
+              "err": {},
+              "uuid": "c135bce5-6ec6-426c-ab7e-6e638f705a2c",
+              "parentUUID": "b5bbbafe-026e-4bc3-b135-6fe7918d0856",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c135bce5-6ec6-426c-ab7e-6e638f705a2c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10728,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
