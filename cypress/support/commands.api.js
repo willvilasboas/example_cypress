@@ -24,6 +24,7 @@ Cypress.Commands.add('consult_list_users', () => {
     }).then((response) => {
         cy.log('URL: ' + response.allRequestResponses[0]["Request URL"])
         cy.validate_response_list_users(response).then(() => {
+            
             return response.body
         })
     })

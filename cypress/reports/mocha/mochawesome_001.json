@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-06-03T00:45:55.412Z",
-    "end": "2023-06-03T00:45:56.208Z",
-    "duration": 796,
+    "start": "2023-06-05T23:12:22.116Z",
+    "end": "2023-06-05T23:12:22.872Z",
+    "duration": 756,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "9b3cdc6d-10d0-49aa-a4a3-bbed98e1d2e5",
+      "uuid": "88de2c2b-00b2-42c4-b59d-b61769c9a964",
       "title": "",
       "fullFile": "cypress\\e2e\\post_create_user.spec.cy.js",
       "file": "cypress\\e2e\\post_create_user.spec.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "2971b22f-680b-4ea8-ab47-ee4cdbdaff1d",
+          "uuid": "8cf5c734-3038-407b-9c5a-7811d7404b86",
           "title": "Criar usuário na API Reqres.in",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Deve criar um novo usuário",
               "fullTitle": "Criar usuário na API Reqres.in Deve criar um novo usuário",
               "timedOut": null,
-              "duration": 685,
+              "duration": 668,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.valid_create_user();",
               "err": {},
-              "uuid": "c3ae36df-86d2-47ea-b2ec-9a3622f15f9b",
-              "parentUUID": "2971b22f-680b-4ea8-ab47-ee4cdbdaff1d",
+              "uuid": "726dda03-f533-4bd0-935e-d594cb6a019e",
+              "parentUUID": "8cf5c734-3038-407b-9c5a-7811d7404b86",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c3ae36df-86d2-47ea-b2ec-9a3622f15f9b"
+            "726dda03-f533-4bd0-935e-d594cb6a019e"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 685,
+          "duration": 668,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

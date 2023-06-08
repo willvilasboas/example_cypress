@@ -1,23 +1,80 @@
 {
   "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-06-03T04:30:07.360Z",
-    "end": "2023-06-03T04:30:07.365Z",
-    "duration": 5,
-    "testsRegistered": 0,
-    "passPercent": null,
-    "pendingPercent": null,
+    "start": "2023-06-05T23:26:59.018Z",
+    "end": "2023-06-05T23:27:14.572Z",
+    "duration": 15554,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false
   },
   "results": [
-    false
+    {
+      "uuid": "1ba25bf3-2df1-47dc-92b2-98852c018fca",
+      "title": "",
+      "fullFile": "cypress\\e2e\\web_login.spec.cy.js",
+      "file": "cypress\\e2e\\web_login.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ff655e65-bdab-4ad8-a478-d043ac648c0d",
+          "title": "Validar login com sucesso do site Test Automation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Realiza o login com sucesso",
+              "fullTitle": "Validar login com sucesso do site Test Automation Realiza o login com sucesso",
+              "timedOut": null,
+              "duration": 10214,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login(data.username, data.password);",
+              "err": {},
+              "uuid": "261cdf08-89db-472e-abb6-7315676f7b41",
+              "parentUUID": "ff655e65-bdab-4ad8-a478-d043ac648c0d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "261cdf08-89db-472e-abb6-7315676f7b41"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10214,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
   ],
   "meta": {
     "mocha": {

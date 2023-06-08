@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-06-03T00:46:06.081Z",
-    "end": "2023-06-03T00:46:24.614Z",
-    "duration": 18533,
+    "start": "2023-06-05T23:12:31.374Z",
+    "end": "2023-06-05T23:12:47.925Z",
+    "duration": 16551,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "41b45ec8-283c-4715-883e-35251d230b3b",
+      "uuid": "df47ef03-fe4b-4cde-a799-a526e5c2115e",
       "title": "",
       "fullFile": "cypress\\e2e\\web_login.spec.cy.js",
       "file": "cypress\\e2e\\web_login.spec.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b464021a-5e4f-44f8-8ac0-61d55e9c3a39",
+          "uuid": "a480099a-e895-4a4b-83d8-4f2d48887b90",
           "title": "Validar login com sucesso do site Test Automation",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Realiza o login com sucesso",
               "fullTitle": "Validar login com sucesso do site Test Automation Realiza o login com sucesso",
               "timedOut": null,
-              "duration": 12513,
+              "duration": 11234,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.login(data.username, data.password);",
               "err": {},
-              "uuid": "80f7c2f1-d3e1-4791-8114-6a9434840ab9",
-              "parentUUID": "b464021a-5e4f-44f8-8ac0-61d55e9c3a39",
+              "uuid": "a6351536-ad8a-4b9c-82ec-bf99fb60fcfc",
+              "parentUUID": "a480099a-e895-4a4b-83d8-4f2d48887b90",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "80f7c2f1-d3e1-4791-8114-6a9434840ab9"
+            "a6351536-ad8a-4b9c-82ec-bf99fb60fcfc"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 12513,
+          "duration": 11234,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

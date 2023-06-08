@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-06-03T04:29:39.891Z",
-    "end": "2023-06-03T04:29:40.977Z",
-    "duration": 1086,
+    "start": "2023-06-05T23:25:21.751Z",
+    "end": "2023-06-05T23:25:22.622Z",
+    "duration": 871,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "bae9f577-8367-4306-83e1-8223c6967571",
+      "uuid": "8b9b4866-3256-45dd-b76f-d3da867c3b7c",
       "title": "",
       "fullFile": "cypress\\e2e\\get_list_users.spec.cy.js",
       "file": "cypress\\e2e\\get_list_users.spec.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d47663bf-7772-438d-8b1a-ccd1483f336d",
+          "uuid": "d1873abe-072e-4db5-90fd-5622c652bad7",
           "title": "Consulta de usuarios via API Reqres.in",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "GET - Deve retornar uma lista de usuarios",
               "fullTitle": "Consulta de usuarios via API Reqres.in GET - Deve retornar uma lista de usuarios",
               "timedOut": null,
-              "duration": 862,
+              "duration": 731,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.consult_list_users();",
               "err": {},
-              "uuid": "285213ab-2096-44d0-b19c-c1821047e28f",
-              "parentUUID": "d47663bf-7772-438d-8b1a-ccd1483f336d",
+              "uuid": "a167def7-cc39-4408-bd20-74de9112db6d",
+              "parentUUID": "d1873abe-072e-4db5-90fd-5622c652bad7",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "285213ab-2096-44d0-b19c-c1821047e28f"
+            "a167def7-cc39-4408-bd20-74de9112db6d"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 862,
+          "duration": 731,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

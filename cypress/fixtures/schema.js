@@ -23,7 +23,7 @@ export const valueSchema = {
         type: 'object',
         properties: {
           url: { type: 'string', format: 'uri' },
-          text: { type: 'string' }
+          text: { type: 'integer' }
         },
         required: ['url', 'text']
       }

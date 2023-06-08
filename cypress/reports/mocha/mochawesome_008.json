@@ -1,23 +1,80 @@
 {
   "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-06-03T04:30:19.112Z",
-    "end": "2023-06-03T04:30:19.122Z",
-    "duration": 10,
-    "testsRegistered": 0,
-    "passPercent": null,
-    "pendingPercent": null,
+    "start": "2023-06-06T11:41:25.230Z",
+    "end": "2023-06-06T11:41:28.586Z",
+    "duration": 3356,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false
   },
   "results": [
-    false
+    {
+      "uuid": "874a12e7-83b4-4c61-a45e-6cc1b227ff8c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\get_list_users.spec.cy.js",
+      "file": "cypress\\e2e\\get_list_users.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "338356af-7df2-433c-872c-b23cab224b19",
+          "title": "Consulta de usuarios via API Reqres.in",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "GET - Deve retornar uma lista de usuarios",
+              "fullTitle": "Consulta de usuarios via API Reqres.in GET - Deve retornar uma lista de usuarios",
+              "timedOut": null,
+              "duration": 3273,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.consult_list_users();",
+              "err": {},
+              "uuid": "30fdccd2-b25b-469e-85ef-4a769f81277a",
+              "parentUUID": "338356af-7df2-433c-872c-b23cab224b19",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "30fdccd2-b25b-469e-85ef-4a769f81277a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3273,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
   ],
   "meta": {
     "mocha": {
